@@ -34,4 +34,12 @@ public class MovableRectangle implements Movable {
     public void moveRight() {
 
     }
+
+    @Override
+    public String toString() {
+        return "MovableRectangle{" +
+                "topLeft=" + topLeft +
+                ", bottomRight=" + bottomRight +
+                '}';
+    }
 }
