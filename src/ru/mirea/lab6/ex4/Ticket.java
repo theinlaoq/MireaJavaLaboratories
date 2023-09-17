@@ -1,9 +1,15 @@
 package ru.mirea.lab6.ex4;
 
-public class Car implements Priceable {
+public class Ticket implements Priceable{
     private float price;
-    public Car(float price) {
+
+    public Ticket(float price) {
         this.price = price;
+    }
+
+    @Override
+    public float getPrice() {
+        return price;
     }
 
     public void setPrice(float price) {
@@ -11,13 +17,8 @@ public class Car implements Priceable {
     }
 
     @Override
-    public float getPrice() {
-        return this.price;
-    }
-
-    @Override
     public String toString() {
-        return "Car{" +
+        return "Ticket{" +
                 "price=" + price +
                 '}';
     }
