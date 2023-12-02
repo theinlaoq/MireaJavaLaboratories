@@ -1,6 +1,8 @@
 package ru.mirea.lab6.ex3;
 
-public class Animal implements Nameable{
+import java.io.Serializable;
+
+public class Animal implements Nameable, Serializable {
     private String name;
 
     public Animal(String name) {
